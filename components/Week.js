@@ -29,7 +29,7 @@ const Week = () => {
               <div key={i}>
                 <h3>{i === 0 ? "Tomorrow" : stringDate(e.dt_txt)}</h3>
                 <Image
-                  src={`../public/img/${e.weather[0].icon.replace(
+                  src={`/img/${e.weather[0].icon.replace(
                     "n",
                     "d"
                   )}.png`}

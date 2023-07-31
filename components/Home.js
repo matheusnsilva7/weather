@@ -17,14 +17,14 @@ const Home = () => {
       <Nav />
       <div className={classes.container}>
         <Image
-          src="../public/img/Cloud-background.png"
+          src="/img/Cloud-background.png"
           width={563}
           height={326}
           alt="background"
           priority={true}
         />
         <Image
-          src={`../public/img/${
+          src={`/img/${
             data ? data.weather[0].icon.replace("n", "d") : "01d"
           }.png`}
           width={200}
