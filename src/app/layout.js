@@ -1,7 +1,5 @@
-"use client";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import { StoreContextProvider } from "../../components/store-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +17,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
         />
       </head>
-      <StoreContextProvider>
-        <body className={inter.className}>{children}</body>
-      </StoreContextProvider>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
